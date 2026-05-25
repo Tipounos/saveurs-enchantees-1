@@ -183,26 +183,5 @@
   `;
   document.head.appendChild(styleSheet);
 
-  /* ─── Smooth active nav highlight ───────────────────────── */
-  const sections    = document.querySelectorAll("section[id]");
-  const navLinkEls  = document.querySelectorAll(".nav__links li a:not(.nav__cta)");
-
-  const sectionObserver = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const id = entry.target.getAttribute("id");
-          navLinkEls.forEach(a => {
-            a.style.color = a.getAttribute("href") === `#${id}`
-              ? "var(--gold)"
-              : "";
-          });
-        }
-      });
-    },
-    { rootMargin: "-40% 0px -55% 0px" }
-  );
-
-  sections.forEach(s => sectionObserver.observe(s));
 
 })();
