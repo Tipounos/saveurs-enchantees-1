@@ -189,141 +189,268 @@
       <div class="galerie__item reveal-up" style="--delay:.24s"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=80&auto=format&fit=crop" alt="Création 4" /></div>
       <div class="galerie__item reveal-up" style="--delay:.32s"><img src="https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?w=600&q=80&auto=format&fit=crop" alt="Création 5" /></div>
       <div class="galerie__item reveal-up" style="--delay:.4s"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80&auto=format&fit=crop" alt="Création 6" /></div>
-      <div class="galerie__item reveal-up" style="--delay:.48s"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80&auto=format&fit=crop" alt="Création 7" /></div>
     </div>
   </section>
 
   <!-- ════════════════════════════════════════ AVIS ══════════════════════════════════════ -->
-  <section class="avis" id="avis">
-    <div class="section-header">
-      <p class="section-label">Avis Clients</p>
-      <h2 class="section-title">Ils nous ont fait <em>confiance</em></h2>
-      <p class="avis__subtitle">Plus de 200 événements réalisés avec passion</p>
+  <section class="reviews" id="reviews">
+    <div class="container">
+
+      <div class="reviews__header">
+        <h2 class="reviews__title" data-i18n="reviews_title">Avis clients</h2>
+        <div class="reviews__summary">
+          <div class="reviews__brand" data-i18n="reviews_brand">Saveurs Enchantées</div>
+          <div class="reviews__stars">
+            <svg viewBox="0 0 24 24" class="star">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+            </svg>
+            <svg viewBox="0 0 24 24" class="star">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+            </svg>
+            <svg viewBox="0 0 24 24" class="star">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+            </svg>
+            <svg viewBox="0 0 24 24" class="star">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+            </svg>
+            <svg viewBox="0 0 24 24" class="star">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+            </svg>
+          </div>
+          <a href="https://search.google.com/local/writereview?placeid=ChIJ4euG1miDj24RF4-Cpw-s_hk" target="_blank"
+            rel="noopener noreferrer" class="btn btn--outline-dark reviews__btn" data-i18n="reviews_write">Écrire un
+            avis</a>
+        </div>
+      </div>
+
+      <div class="reviews__grid">
+        <!-- Card 1 -->
+        <div class="reviews__card">
+          <div class="reviews__card-top">
+            <div class="reviews__avatar-wrap">
+              <div class="reviews__avatar"
+                style="background:#ffcc80;display:flex;align-items:center;justify-content:center;font-weight:bold;color:#e65100;">
+                LR</div>
+              <div class="reviews__avatar-badge">
+                <svg viewBox="0 0 24 24" fill="#fb662b">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+            </div>
+            <div class="reviews__meta">
+              <h3 class="reviews__name">Laurie Rédaction</h3>
+              <span class="reviews__date" data-i18n="reviews_date">Novembre 2025</span>
+            </div>
+            <div class="reviews__google-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                  fill="#4285F4" />
+                <path
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                  fill="#34A853" />
+                <path
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                  fill="#FBBC05" />
+                <path
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                  fill="#EA4335" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="reviews__rating">
+            <div class="reviews__stars">
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+            </div>
+            <div class="reviews__verified">
+              <svg viewBox="0 0 24 24" fill="#3b82f6" width="16" height="16">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              </svg>
+            </div>
+          </div>
+
+          <p class="reviews__text" data-i18n="reviews_text">
+            Saveurs Enchantées a transformé le baptême de notre fils en un moment féérique. La fontaine de chocolat était la star de la soirée !
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="reviews__card" style="transition-delay: 0.1s;">
+          <div class="reviews__card-top">
+            <div class="reviews__avatar-wrap">
+              <div class="reviews__avatar"
+                style="background:#e1bee7;display:flex;align-items:center;justify-content:center;font-weight:bold;color:#6a1b9a;">
+                SS</div>
+              <div class="reviews__avatar-badge">
+                <svg viewBox="0 0 24 24" fill="#fb662b">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+            </div>
+            <div class="reviews__meta">
+              <h3 class="reviews__name">Stéphanie Savignac</h3>
+              <span class="reviews__date" data-i18n="reviews_date2">Octobre 2025</span>
+            </div>
+            <div class="reviews__google-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                  fill="#4285F4" />
+                <path
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                  fill="#34A853" />
+                <path
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                  fill="#FBBC05" />
+                <path
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                  fill="#EA4335" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="reviews__rating">
+            <div class="reviews__stars">
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+            </div>
+            <div class="reviews__verified">
+              <svg viewBox="0 0 24 24" fill="#3b82f6" width="16" height="16">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              </svg>
+            </div>
+          </div>
+
+          <p class="reviews__text" data-i18n="reviews_text2">
+            Une équipe formidable, à l'écoute et créative. Le buffet salé était digne d'un grand restaurant. Je recommande les yeux fermés.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="reviews__card" style="transition-delay: 0.2s;">
+          <div class="reviews__card-top">
+            <div class="reviews__avatar-wrap">
+              <div class="reviews__avatar"
+                style="background:#bbdefb;display:flex;align-items:center;justify-content:center;font-weight:bold;color:#1565c0;">
+                CA</div>
+            </div>
+            <div class="reviews__meta">
+              <h3 class="reviews__name">Justine Mielcarek</h3>
+              <span class="reviews__date" data-i18n="reviews_date3">Avril 2025</span>
+            </div>
+            <div class="reviews__google-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                  fill="#4285F4" />
+                <path
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                  fill="#34A853" />
+                <path
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                  fill="#FBBC05" />
+                <path
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                  fill="#EA4335" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="reviews__rating">
+            <div class="reviews__stars">
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+            </div>
+          </div>
+
+          <p class="reviews__text" data-i18n="reviews_text3">
+            Le candy bar était absolument magique. Chaque détail était pensé, les couleurs parfaites. Tous nos invités ont été émerveillés.
+          </p>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Stats bar -->
-    <div class="avis__stats reveal-up">
-      <div class="avis__stat">
-        <span class="avis__stat-num">5.0</span>
-        <div class="avis__stat-stars">★★★★★</div>
-        <span class="avis__stat-label">Note moyenne</span>
-      </div>
-      <div class="avis__stat-divider"></div>
-      <div class="avis__stat">
-        <span class="avis__stat-num">200+</span>
-        <div class="avis__stat-stars">✦ ✦ ✦</div>
-        <span class="avis__stat-label">Événements</span>
-      </div>
-      <div class="avis__stat-divider"></div>
-      <div class="avis__stat">
-        <span class="avis__stat-num">100%</span>
-        <div class="avis__stat-stars">✦ ✦ ✦</div>
-        <span class="avis__stat-label">Clients satisfaits</span>
-      </div>
     </div>
-
-    <!-- Swiper avis -->
-    <div class="swiper avis-swiper reveal-up" style="--delay:.15s">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="avis__card">
-            <div class="avis__card-top">
-              <div class="avis__avatar">É&amp;T</div>
-              <div>
-                <strong>Émilie &amp; Thomas</strong>
-                <span>Mariage — Château de Vaux</span>
-              </div>
-              <div class="avis__stars">★★★★★</div>
-            </div>
-            <blockquote>« Un travail d'orfèvre. Notre buffet est devenu le clou du mariage, nos invités en parlent encore. Élégance, goût, magie : tout y était. »</blockquote>
-            <div class="avis__card-footer">
-              <span class="avis__tag">Buffet sucré</span>
-              <span class="avis__tag">Candy bar</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="avis__card">
-            <div class="avis__card-top">
-              <div class="avis__avatar">S&amp;M</div>
-              <div>
-                <strong>Sophie &amp; Marc</strong>
-                <span>Anniversaire — Paris 16e</span>
-              </div>
-              <div class="avis__stars">★★★★★</div>
-            </div>
-            <blockquote>« Le candy bar était absolument magique. Chaque détail était pensé, les couleurs parfaites. Tous nos invités ont été émerveillés. »</blockquote>
-            <div class="avis__card-footer">
-              <span class="avis__tag">Candy bar</span>
-              <span class="avis__tag">Sur mesure</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="avis__card">
-            <div class="avis__card-top">
-              <div class="avis__avatar">ND</div>
-              <div>
-                <strong>Nathalie D.</strong>
-                <span>Événement d'entreprise — Versailles</span>
-              </div>
-              <div class="avis__stars">★★★★★</div>
-            </div>
-            <blockquote>« Une équipe formidable, à l'écoute et créative. Le buffet salé était digne d'un grand restaurant. Je recommande les yeux fermés. »</blockquote>
-            <div class="avis__card-footer">
-              <span class="avis__tag">Buffet salé</span>
-              <span class="avis__tag">Professionnel</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="avis__card">
-            <div class="avis__card-top">
-              <div class="avis__avatar">FB</div>
-              <div>
-                <strong>Famille Bertrand</strong>
-                <span>Baptême — Neuilly-sur-Seine</span>
-              </div>
-              <div class="avis__stars">★★★★★</div>
-            </div>
-            <blockquote>« Saveurs Enchantées a transformé le baptême de notre fils en un moment féérique. La fontaine de chocolat était la star de la soirée ! »</blockquote>
-            <div class="avis__card-footer">
-              <span class="avis__tag">Baptême</span>
-              <span class="avis__tag">Fontaine choco</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- Navigation arrows -->
-      <div class="avis-swiper__prev swiper-nav-btn" aria-label="Précédent">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-      </div>
-      <div class="avis-swiper__next swiper-nav-btn" aria-label="Suivant">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </div>
-
-      <div class="avis-swiper__pagination swiper-pagination"></div>
-    </div>
-
   </section>
+
 
   <!-- ══════════════════════════════════════ FOOTER ══════════════════════════════════════ -->
   <footer class="footer">
     <div class="footer__inner">
+
+        <!-- Description -->
+        <div class="footer__col">
+            <h3>Saveurs Enchantées</h4>
+            <p>Traiteur d'exception pour tous vos événements</p>            
+        </div>
+        
+      <!-- Navigation -->
+      <div class="footer__col">
+        <h4>Liens rapides</h4>
+        <ul class="footer__nav-list">
+          <li><a href="#prestations">Accueil</a></li>
+          <li><a href="#buffets">A propos</a></li>
+          <li><a href="#pourquoi">Nos prestations</a></li>
+          <li><a href="#commande">Galerie</a></li>
+          <li><a href="#galerie">Contact</a></li>
+          <li><a href="#avis">Demander un devis</a></li>
+        </ul>
+      </div>
  
       <!-- Contact -->
       <div class="footer__col">
         <h4>Contact</h4>
         <ul>
           <li>
-            <a href="tel:0744590858" class="footer__contact-link">
+            <a href="tel:00000000" class="footer__contact-link">
               <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              07 44 59 08 58
+              01 02 03 04 05
             </a>
           </li>
           <li>
@@ -332,30 +459,34 @@
               Saveur.enchantee@gmail.com
             </a>
           </li>
-          <li>
-            <a href="instagram.com" class="footer__contact-link">
-                Instagram
-            </a>
-          </li>
-          <li>
-            <a href="facebook.com" class="footer__contact-link">
-                Facebook
-            </a>
-          </li>
         </ul>
       </div>
  
-      <!-- Navigation -->
       <div class="footer__col">
-        <h4>Navigation</h4>
-        <ul class="footer__nav-list">
-          <li><a href="#prestations">Accueil</a></li>
-          <li><a href="#buffets">A propos</a></li>
-          <li><a href="#pourquoi">Nos prestations</a></li>
-          <li><a href="#commande">Galerie</a></li>
-          <li><a href="#galerie">Avis</a></li>
-          <li><a href="#avis">Demander un devis</a></li>
-        </ul>
+        <h4>Suivez nous</h4>
+        <div class="footer__socials">
+            <!-- Instagram -->
+            <a href="#" class="footer__social" aria-label="Instagram">
+                <svg viewBox="0 0 24 24">
+                <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="#" class="footer__social" aria-label="Facebook">
+                <svg viewBox="0 0 24 24">
+                <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="#" class="footer__social" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24">
+                <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+            </a>
+        </div>
       </div>
  
     </div>
