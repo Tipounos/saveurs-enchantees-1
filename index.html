@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saveurs Enchantées, traiteur événementiel français. Buffets sucrés & salés, candy bar et créations sur mesure pour mariages, anniversaires et événements de luxe." />
+  <title>Saveurs Enchantées — Traiteur événementiel d'exception</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body id="top">
+
+  <!-- ═══════════════════════════════════════ NAV ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav__logo"><img src="images/logo.png" alt="Saveurs Enchantées"></a>
+
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#buffets">À propos</a></li>
+      <li><a href="#pourquoi">Nos prestations</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#avis">Contact</a></li>
+      <li><a href="#commande" class="nav__cta">Demander un devis</a></li>
+    </ul>
+
+    <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span class="burger__bar"></span>
+      <span class="burger__bar"></span>
+      <span class="burger__bar"></span>
+    </button>
+  </nav>
+
+  <!-- ════════════════════════════ MOBILE DRAWER ════════════════════════════ -->
+  <div class="nav__drawer" id="navDrawer" aria-hidden="true">
+    <ul class="drawer__links">
+      <li><a href="#prestations">Accueil</a></li>
+      <li><a href="#buffets">À propos</a></li>
+      <li><a href="#pourquoi">Nos prestations</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#avis">Avis</a></li>
+      <li><a href="#commande" class="drawer__cta">Demander un devis</a></li>
+    </ul>
+    <div class="drawer__footer">
+      <a href="tel:0744590858">07 44 59 08 58</a>
+      <a href="mailto:Saveur.enchantee@gmail.com">Saveur.enchantee@gmail.com</a>
+    </div>
+  </div>
+  <div class="nav__backdrop" id="navBackdrop"></div>
+
+  <!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img
+        src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=1800&q=85&auto=format&fit=crop"
+        alt="Buffet sucré luxueux"
+        class="hero__img"
+      />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__label reveal">Traiteur événementiel</p>
+      <h1 class="hero__title reveal">Saveurs<br /><em>Enchantées</em></h1>
+      <p class="hero__sub reveal">
+        Le raffinement sucré &amp; salé pour vos événements.<br />
+        Une expérience culinaire féérique, ciselée pour les instants qui comptent.
+      </p>
+      <div class="hero__btns reveal">
+        <a href="#prestations" class="btn btn--ghost">Nos prestations</a>
+        <a href="#commande" class="btn btn--gold">Commander</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">Découvrir</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ PRESTATIONS ════════════════════════════════════ -->
+  <section class="prestations" id="prestations">
+    <div class="section-header">
+      <p class="section-label">Nos Prestations</p>
+      <h2 class="section-title">Pour chaque <em>événement</em>,<br />une mise en scène unique</h2>
+    </div>
+
+    <!-- Swiper carousel -->
+    <div class="swiper prest-swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <article class="prest-card">
+            <div class="prest-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80&auto=format&fit=crop" alt="Mariages" />
+              <span class="prest-card__num">01</span>
+            </div>
+            <div class="prest-card__body">
+              <h3>Mariages</h3>
+              <p>Une scénographie gourmande, à la hauteur du plus beau jour.</p>
+              <span class="prest-card__link">Découvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </article>
+        </div>
+
+        <div class="swiper-slide">
+          <article class="prest-card">
+            <div class="prest-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=80&auto=format&fit=crop" alt="Anniversaires" />
+              <span class="prest-card__num">02</span>
+            </div>
+            <div class="prest-card__body">
+              <h3>Anniversaires</h3>
+              <p>Des moments festifs sublimés par une table inoubliable.</p>
+              <span class="prest-card__link">Découvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </article>
+        </div>
+
+        <div class="swiper-slide">
+          <article class="prest-card">
+            <div class="prest-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800&q=80&auto=format&fit=crop" alt="Baptêmes" />
+              <span class="prest-card__num">03</span>
+            </div>
+            <div class="prest-card__body">
+              <h3>Baptêmes</h3>
+              <p>Douceur, élégance et tendresse pour célébrer l'arrivée.</p>
+              <span class="prest-card__link">Découvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </article>
+        </div>
+
+        <div class="swiper-slide">
+          <article class="prest-card">
+            <div class="prest-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80&auto=format&fit=crop" alt="Événements privés" />
+              <span class="prest-card__num">04</span>
+            </div>
+            <div class="prest-card__body">
+              <h3>Événements privés</h3>
+              <p>Une parenthèse intime, raffinée et sur mesure.</p>
+              <span class="prest-card__link">Découvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </article>
+        </div>
+
+        <div class="swiper-slide">
+          <article class="prest-card">
+            <div class="prest-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1556909114-44e3e70034e2?w=800&q=80&auto=format&fit=crop" alt="Événements professionnels" />
+              <span class="prest-card__num">05</span>
+            </div>
+            <div class="prest-card__body">
+              <h3>Événements professionnels</h3>
+              <p>L'art de recevoir au service de votre image.</p>
+              <span class="prest-card__link">Découvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <!-- Navigation arrows -->
+      <div class="prest-swiper__prev swiper-nav-btn" aria-label="Précédent">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      </div>
+      <div class="prest-swiper__next swiper-nav-btn" aria-label="Suivant">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+
+      <!-- Pagination -->
+      <div class="prest-swiper__pagination swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ GALERIE ════════════════════════════════════ -->
+  <section class="galerie" id="galerie">
+    <div class="section-header">
+      <h2 class="section-title">Notre <em>galerie</em></h2>
+    </div>
+
+    <div class="galerie__grid">
+      <div class="galerie__item reveal-up" style="--delay:0s"><img src="https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?w=600&q=80&auto=format&fit=crop" alt="Création 1" /></div>
+      <div class="galerie__item reveal-up" style="--delay:.08s"><img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=80&auto=format&fit=crop" alt="Création 2" /></div>
+      <div class="galerie__item reveal-up" style="--delay:.16s"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80&auto=format&fit=crop" alt="Création 3" /></div>
+      <div class="galerie__item reveal-up" style="--delay:.24s"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=80&auto=format&fit=crop" alt="Création 4" /></div>
+      <div class="galerie__item reveal-up" style="--delay:.32s"><img src="https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?w=600&q=80&auto=format&fit=crop" alt="Création 5" /></div>
+      <div class="galerie__item reveal-up" style="--delay:.4s"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80&auto=format&fit=crop" alt="Création 6" /></div>
+      <div class="galerie__item reveal-up" style="--delay:.48s"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80&auto=format&fit=crop" alt="Création 7" /></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════ AVIS ══════════════════════════════════════ -->
+  <section class="avis" id="avis">
+    <div class="section-header">
+      <p class="section-label">Avis Clients</p>
+      <h2 class="section-title">Ils nous ont fait <em>confiance</em></h2>
+      <p class="avis__subtitle">Plus de 200 événements réalisés avec passion</p>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="avis__stats reveal-up">
+      <div class="avis__stat">
+        <span class="avis__stat-num">5.0</span>
+        <div class="avis__stat-stars">★★★★★</div>
+        <span class="avis__stat-label">Note moyenne</span>
+      </div>
+      <div class="avis__stat-divider"></div>
+      <div class="avis__stat">
+        <span class="avis__stat-num">200+</span>
+        <div class="avis__stat-stars">✦ ✦ ✦</div>
+        <span class="avis__stat-label">Événements</span>
+      </div>
+      <div class="avis__stat-divider"></div>
+      <div class="avis__stat">
+        <span class="avis__stat-num">100%</span>
+        <div class="avis__stat-stars">✦ ✦ ✦</div>
+        <span class="avis__stat-label">Clients satisfaits</span>
+      </div>
+    </div>
+
+    <!-- Swiper avis -->
+    <div class="swiper avis-swiper reveal-up" style="--delay:.15s">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="avis__card">
+            <div class="avis__card-top">
+              <div class="avis__avatar">É&amp;T</div>
+              <div>
+                <strong>Émilie &amp; Thomas</strong>
+                <span>Mariage — Château de Vaux</span>
+              </div>
+              <div class="avis__stars">★★★★★</div>
+            </div>
+            <blockquote>« Un travail d'orfèvre. Notre buffet est devenu le clou du mariage, nos invités en parlent encore. Élégance, goût, magie : tout y était. »</blockquote>
+            <div class="avis__card-footer">
+              <span class="avis__tag">Buffet sucré</span>
+              <span class="avis__tag">Candy bar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="avis__card">
+            <div class="avis__card-top">
+              <div class="avis__avatar">S&amp;M</div>
+              <div>
+                <strong>Sophie &amp; Marc</strong>
+                <span>Anniversaire — Paris 16e</span>
+              </div>
+              <div class="avis__stars">★★★★★</div>
+            </div>
+            <blockquote>« Le candy bar était absolument magique. Chaque détail était pensé, les couleurs parfaites. Tous nos invités ont été émerveillés. »</blockquote>
+            <div class="avis__card-footer">
+              <span class="avis__tag">Candy bar</span>
+              <span class="avis__tag">Sur mesure</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="avis__card">
+            <div class="avis__card-top">
+              <div class="avis__avatar">ND</div>
+              <div>
+                <strong>Nathalie D.</strong>
+                <span>Événement d'entreprise — Versailles</span>
+              </div>
+              <div class="avis__stars">★★★★★</div>
+            </div>
+            <blockquote>« Une équipe formidable, à l'écoute et créative. Le buffet salé était digne d'un grand restaurant. Je recommande les yeux fermés. »</blockquote>
+            <div class="avis__card-footer">
+              <span class="avis__tag">Buffet salé</span>
+              <span class="avis__tag">Professionnel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="avis__card">
+            <div class="avis__card-top">
+              <div class="avis__avatar">FB</div>
+              <div>
+                <strong>Famille Bertrand</strong>
+                <span>Baptême — Neuilly-sur-Seine</span>
+              </div>
+              <div class="avis__stars">★★★★★</div>
+            </div>
+            <blockquote>« Saveurs Enchantées a transformé le baptême de notre fils en un moment féérique. La fontaine de chocolat était la star de la soirée ! »</blockquote>
+            <div class="avis__card-footer">
+              <span class="avis__tag">Baptême</span>
+              <span class="avis__tag">Fontaine choco</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Navigation arrows -->
+      <div class="avis-swiper__prev swiper-nav-btn" aria-label="Précédent">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      </div>
+      <div class="avis-swiper__next swiper-nav-btn" aria-label="Suivant">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+
+      <div class="avis-swiper__pagination swiper-pagination"></div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════ FOOTER ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="nav__logo">Saveurs<span>Enchantées</span></a>
+        <p>Traiteur événementiel d'exception.<br />Le raffinement sucré &amp; salé pour vos plus beaux moments.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.79 1.53V6.75a4.85 4.85 0 0 1-1.02-.06z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:0744590858">07 44 59 08 58</a></li>
+          <li><a href="mailto:Saveur.enchantee@gmail.com">Saveur.enchantee@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#prestations">Prestations</a></li>
+          <li><a href="#buffets">Buffets</a></li>
+          <li><a href="#pourquoi">Pourquoi nous</a></li>
+          <li><a href="#commande">Commander</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#avis">Avis</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Saveurs Enchantées. Tous droits réservés. Crafted with passion.</p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
