@@ -408,7 +408,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   width: 1px;
   height: 50px;
   background: linear-gradient(to bottom, transparent, var(--gold));
-  animation: scrollLine 1.8s ease-in-out infinite reverse;
+  animation: scrollLine 1.8s ease-in-out infinite;
 }
 @keyframes scrollLine {
   0%   { transform: scaleY(0); transform-origin: top; opacity: 0; }
