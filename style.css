@@ -1190,7 +1190,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
   }
-  .buffets__item--large { grid-column: span 2; grid-row: span 1; aspect-ratio: 16/7; }
+  .buffets__item--large { grid-column: span 1; grid-row: span 1; aspect-ratio: 16/7; }
  
   /* Commande */
   .commande__inner { grid-template-columns: 1fr; gap: 3rem; }
@@ -1257,8 +1257,8 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   /* Galerie */
   .galerie { padding: 4.5rem 4%; }
   .galerie__grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; gap: .6rem; }
-  .galerie__item:nth-child(1) { grid-column: span 2; grid-row: span 1; }
-  .galerie__item:nth-child(5) { grid-column: span 2; }
+  .galerie__item:nth-child(1) { grid-column: span 1; grid-row: span 1; }
+  .galerie__item:nth-child(5) { grid-column: span 1; }
  
   /* Commande form */
   .commande { padding: 4.5rem 4%; }
